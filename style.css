@@ -1,3 +1,89 @@
-body {
-  background-image: url('images/143-rainbow.jpg');
+
+ol {
+  font-size: 18px;
+  list-style-type: decimal; /* Vanliga Nummer */
+  font-family: 'PixelFont', sans-serif; /* Fallback to sans-serif if font doesn't load */
+  
 }
+
+.header {
+  display: flex; /* Enables horizontal layout */
+  align-items: center; /* Centers items vertically */
+  justify-content: center; /* Ensures elements are evenly spaced */
+  gap: 20px; /* Adds spacing between elements */
+  text-align: center; /* Ensures text inside h1 is centered */
+}
+
+
+@font-face {
+  font-family: 'PixelFont'; 
+  src: url('fonts/PIXEARG_.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.yellow-outline {
+  color: yellow;
+  text-shadow: 
+      -1px -1px 0 black,  
+       1px -1px 0 black,  
+      -1px  1px 0 black,  
+       1px  1px 0 black; 
+  font-weight: bold; 
+}
+
+.additive-blend {
+  mix-blend-mode: lighten; 
+}
+
+.camera {
+  position: fixed;
+  right: 10px;
+  top: 0px;
+  z-index: 9999;
+}
+
+.image-additive {
+  position: absolute;  
+  top: 0;
+  left: 0;
+  width: 100%;  
+  height: auto; 
+  z-index: -1;  
+  mix-blend-mode: lighten; 
+}
+
+.epic {
+  color: red;
+font-family: verdana;
+font-size: 20px;
+text-align: center;}
+
+.guiltytext {
+  color: white;
+  text-align: center;
+  font-family: papyrus;
+  font-weight: bold;
+  -webkit-text-stroke: 1px black;
+  font-size: 75px;
+}
+
+.content {
+padding: 100px;
+margin-left: 0;
+margin-right: 0;
+}
+
+
+body {
+  margin-left: 0;
+  margin-right: 0;
+  height: 100%;
+  overflow-x: hidden;
+  background-image: url('images/rainbow-scroll.gif'); 
+  background-size: 100% 100%;
+  background-position: center;
+  background-attachment: fixed; 
+}
+
+
